@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kees awesome ASCII Counter</title>
+</head>
+
+<body>
+
+  <script>
+    document.body.innerHTML = "";
+    var string = prompt("vul iets in funny guy");
+    string = string.replace('"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fallout 4\\Data\\', '');
+    string = string.replace('"', '');
+
+    document.write("lengte fuckin string " + string.length + "<br>");
+
+    for (var i = 0; i < string.length; i++) {
+      document.write(string.charCodeAt(i) + "</br>");
+    }
+
+    document.write("you know what a chazzer is?");
+
+  </script>
+
+</body>
+
+</html>
